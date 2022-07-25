@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase
 import { getFirestore, collection, addDoc, getDoc, getDocs, deleteDoc, doc, updateDoc, deleteField, query, where, onSnapshot } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-firestore.js";
 
 
-class ServiceFirestore {
+export default class ServiceFirestore {
     static INIT_DEFAULT_COLLECTION = "default-collection";
 
     constructor(config, collection = ServiceFirestore.INIT_DEFAULT_COLLECTION) {
